@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #f0f0f0;
+  direction: rtl;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  background: rgba(255 255 255 / 0.1);
+  border-radius: 12px;
+  max-width: 700px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 5px;
+  font-weight: 900;
+}
+
+.role {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #a0c4ff;
+}
+
+.intro {
+  margin-top: 30px;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #caf0f8;
+  font-weight: 700;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #e0e0e0;
+}
+
+.social-icons {
+  margin: 40px 0 30px;
+}
+
+.social-icons a {
+  margin: 0 18px;
+  font-size: 2.8rem;
+  color: #caf0f8;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.social-icons a:hover {
+  color: #ffd60a;
+  transform: scale(1.2);
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ffffff22;
+  line-height: 100px;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: default;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: float 4s ease-in-out infinite;
+  user-select: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.icon.css {
+  background-color: #2965f1;
+  animation-delay: 0s;
+}
+
+.icon.html {
+  background-color: #e34c26;
+  animation-delay: 1.3s;
+}
+
+.icon.js {
+  background-color: #f0db4f;
+  color: #333;
+  animation-delay: 2.6s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    transform: translateY(-20px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  }
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #a0a0a0;
+  font-weight: 500;
+}
